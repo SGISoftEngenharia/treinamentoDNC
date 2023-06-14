@@ -1,7 +1,31 @@
-
-
+bady{
+    margin: 0;
+    padding: 0;
+}
 
 .menuSuperior a {
     text-decoration: none;
-    color: brown;
+    color: rgb(255, 255, 255);
+}
+#navegacao{
+   
+    width: 100%;
+    height: 100%;
+    padding: 2%;      
+   
+    background-color: rgba(0, 0, 0, 0.788);
+    display: flex;     
+    justify-content: space-between;
+}
+
+.menuSuperior {
+    width: 55%;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+#navegacao button {
+    display: flex;
+    margin-right: 2%;
+   
 }
