@@ -1,0 +1,53 @@
+body{
+   text-align: center;
+    background-color: rgb(48, 48, 48);
+    color: rgb(239, 235, 228);
+    
+    
+}
+.principal img {
+   
+    margin: 20px 0px 0px 35px;
+    padding: 5% 0% 5% 0%;
+    width: 150px;
+    background-color: white;
+    border-radius: 30px;
+    
+}
+
+
+.principal{
+align-items: center;
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 33vw;
+}
+
+.tabuada{
+    display: grid;
+    grid-auto-columns: 30vw;
+    width: 500px;
+    border-radius: 20px;
+    margin: 5% 0% 10% 35%;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(48, 48, 48);
+}
+
+.tabuada h3 {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tabuada input {
+
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 7px;
+    border-style:double;
+}
+
+.tabuada input:hover {
+    background-color: rgba(159, 207, 203, 0.74);
+   
+}
