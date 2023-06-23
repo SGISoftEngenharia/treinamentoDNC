@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cess/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tabuada.js"></script>
     <title>Tabuada</title>
 </head>
 <body>
@@ -14,10 +15,19 @@
     </div>
     <div class="tabuada">
         <h3>Qual da tabuada você quer saber!!!</h3>
-        <p><input type="number" placeholder="Digite um numero" ></p>
+
+        <p><input type="number" id="num" placeholder="Digite um numero" ></p>
+
         <h3>Até que numero?</h3>
-        <p><input type="number" name="" id="" placeholder="Digite um numero" ></p>
-        <p><input type="button" value="calcular"></p>
+
+        <p><input type="number" name="" id="end" placeholder="Digite um numero" ></p>
+
+        <h3  id="resultado"> Resultado: </h3>
+
+        <p><button value="calcular" onclick="tabuada()">Calcular</button> </p>
+        <p><button  onclick="window.location.reload(true)">Limpar</button> </p>
+
     </div>
+    
 </body>
 </html>

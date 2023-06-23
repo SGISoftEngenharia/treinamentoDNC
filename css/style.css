@@ -28,7 +28,7 @@ grid-auto-columns: 33vw;
     grid-auto-columns: 30vw;
     width: 500px;
     border-radius: 20px;
-    margin: 5% 0% 10% 35%;
+    margin: auto;
     text-align: center;
     background-color: aliceblue;
     color: rgb(48, 48, 48);
@@ -44,10 +44,33 @@ grid-auto-columns: 33vw;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 7px;
-    border-style:double;
+    border-style:none;
+    background-color: rgb(218, 216, 216);
+    height: 30px;
 }
 
 .tabuada input:hover {
     background-color: rgba(159, 207, 203, 0.74);
+    border-style:none;
    
+}
+.tabuada button{
+    border: 0px;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(32, 148, 194);
+}
+
+.tabuada button:hover{
+
+   
+    background-color: rgb(60, 161, 136);
+    cursor: pointer;
+  
+
+}
+#resultado{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
