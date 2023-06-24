@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+   
     <title>Dasafio da Lampada</title>
 </head>
 <body>
     <div class="fundo">
-
+        <img src="imagens/LogoIcon.png" id="logo">
+        <h1>Lampada</h1>
     </div>
-    <div class="lampada">
+    <div class="lampada" >
+        <img src="imagens/lampada_Off.png"  id="led" >
+        
+         <div class="botao">
+            <button type="button" id="liga"  onclick="ligaLampada()">Liga</button>
+            <button type="button" id="desliga" onclick="desligaLampada()">Desliga</button>
+         </div>
         
     </div>
-
+    <script src="js/index.js"></script>
 </body>
 </html>

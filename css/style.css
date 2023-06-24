@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(207, 207, 207);
+}
+#logo{
+    width: 150px;
+}
+.fundo{
+    display: grid;
+    grid-auto-flow: column;
+    columns: 20vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lampada{
+   
+   margin: auto;
+    width: 550px;
+    height: 550px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    
+    
+   
+}
+.lampada img {
+    display: grid;
+    width: 150px;
+    margin: auto;
+    padding: 50px 0px 150px;
+   
+}
+
+.botao{
+    width: auto;
+    height: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 80px;
+    margin: 0px 50px 0px 50px; 
+   
+}
+
+.botao button {
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: rgba(31, 158, 158, 0.671);
+    border: none;
+    border-radius: 15px;
+}
+
+.botao button:hover{
+    background-color: rgba(31, 158, 158);
+    cursor:pointer;
+}
