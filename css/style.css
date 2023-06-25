@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(48, 48, 48);
+}
+.conteiner{
+    margin-top: 150px;
+    
+}
+
+.tempo{
+    margin-top: 100px;
+    width: 600px;
+    height: 350px;
+    background-color: rgb(209, 209, 209);   
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#titulo{
+    margin-bottom: 50px;
+}
+
+.time{
+    display: grid;   
+    grid-auto-flow: column;
+}
+
+.time h1 {
+    color: rgb(70, 70, 70);
+}
+
