@@ -74,17 +74,21 @@ button:hover{
 
 table{
     border-collapse: collapse;
-    width: 100%;
+    width: 70%;
     border: #ccc;
     margin-top: 60px;
     margin-bottom: 160px;
+    text-align: center;
+  
 }
 table th {
     background-color: #303030;
-    padding: 1px;
+    padding: 10px;
     color: beige;
 }
 
 table td {
-    padding: 1px;
+    padding: 10px;
+    border-bottom: 1px solid #a3a3a3;
 }
+

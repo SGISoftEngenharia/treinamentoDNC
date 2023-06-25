@@ -25,7 +25,8 @@ class Produto{
 
        }
 
-       console.log(this.arrayProdutos);
+       this.listaProdutos();
+    
       
     }
 
@@ -78,6 +79,41 @@ class Produto{
 
         this.arrayProdutos.push(produto);
         this.id++;
+     }
+
+     // criar um método para listar os produtos
+
+     listaProdutos(){
+
+        let corpoTabela = window.document.getElementById('tbody');
+        corpoTabela.innerText = '';
+
+        // varrer o array de produtos
+
+        for(let i = 0; i < this.arrayProdutos.length; i++){
+
+           let tr = corpoTabela.insertRow();// inseri uma linha na tabela
+
+           let td_id = tr.insertCell();// insere uma colula 
+           let td_NomeProduto = tr.insertCell();
+           let td_precoProduto = tr.insertCell();
+           let td_DeletarProduto = tr.insertCell();
+
+           // escrver os dados nas  colunas
+
+        td_id.innerText = this.arrayProdutos[i].id;  // entra dentro d array e pega apenas o id.
+        td_NomeProduto.innerText = this.arrayProdutos[i].nomeProduto;
+        td_precoProduto.innerText = this.arrayProdutos[i].precoProduto;
+        let imgTrash = document.createElement('img');// cria um elemento no html
+        imgTrash.src = 'imagens/trash.png';// caminho da imagem
+        td_DeletarProduto.appendChild(imgTrash);// imprimi a imagem na coluna
+
+
+
+
+
+        }
+
      }
 }
 
