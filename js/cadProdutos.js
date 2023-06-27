@@ -26,6 +26,7 @@ class Produto{
        }
 
        this.listaProdutos();
+       this. cancelar();
     
       
     }
@@ -62,7 +63,7 @@ class Produto{
 
         if(produto.precoProduto == ''){
 
-            msg.innerHTML = `Digite o preço do Produto!!!`;
+            msg.innerHTML = `Digite o preço do Produto!!! `;
             msg.style.color = 'red';
             msg.style.fontSize = '18px'
             msg.style.fontWeight = 'bold'           
@@ -75,11 +76,10 @@ class Produto{
      // criar um método para salvar os produtos
 
      salvar(produto){
-        // empurrar as informações de produtos para dentro do array
 
-        this.arrayProdutos.push(produto);
-        this.id++;
-     }
+      this.arrayProdutos.push(produto);
+      this.id++;
+   }
 
      // criar um método para listar os produtos
 
@@ -106,6 +106,7 @@ class Produto{
         td_precoProduto.innerText = this.arrayProdutos[i].precoProduto;
         let imgTrash = document.createElement('img');// cria um elemento no html
         imgTrash.src = 'imagens/trash.png';// caminho da imagem
+        imgTrash.setAttribute("onclick","produto.deletar(" + this.arrayProdutos[i].id+ ")");
         td_DeletarProduto.appendChild(imgTrash);// imprimi a imagem na coluna
 
 
@@ -115,6 +116,31 @@ class Produto{
         }
 
      }
+
+     cancelar(){
+      document.getElementById('nProduto').value = '';
+      document.getElementById('pProduto').value ='';
+     }
+
+     deletar(id ){   
+      let msg = window.document.getElementById('avisoTabela');
+      let corpoTabela = window.document.getElementById('tbody');
+
+for(let i = 0; i < this.arrayProdutos.length; i++){
+   if(this.arrayProdutos[i].id == id){
+      this.arrayProdutos.splice(i,1);
+      corpoTabela.deleteRow(i);
+   }
+
+}
+
+      msg.innerHTML = `Dados Deletados! Id: ${id}`;
+      msg.style.color = 'red';
+      msg.style.fontSize = '18px'
+      msg.style.fontWeight = 'bold'           
+      
+     }
+
 }
 
 var produto = new Produto();
