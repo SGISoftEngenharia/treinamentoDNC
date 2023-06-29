@@ -1,0 +1,43 @@
+.layout{
+    display: block;
+    
+}
+#card{
+    width: 600px;
+    height: 450px;
+   
+    background-color: #514988; 
+    color: white; 
+}
+#title{
+    font-size: 30px; 
+    text-align: center;
+    color: hwb(51 0% 19%);
+}
+#navbar{
+    background-color: hwb(51 0% 19%);
+}
+#subtitle{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+#subtitle-video{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(29, 29, 29);
+   
+}
+#card-text{
+margin-top: 40px;
+text-align: justify;
+padding: 20px ;
+
+}
+.card-body h5 {
+    text-align: center;
+}
+#video{
+    width: 600px;
+    height: 380px;
+}
