@@ -3,8 +3,8 @@
     
 }
 #card{
-    width: 600px;
-    height: 450px;
+    width: 550px;
+    height: 530px;
    
     background-color: #514988; 
     color: white; 
@@ -21,11 +21,14 @@
     font-size: 14px;
     text-align: center;
     color: white;
+   
 }
 #subtitle-video{
-    font-size: 14px;
-    text-align: center;
-    color: rgb(29, 29, 29);
+    font-size: 19px;    
+    color:#E33881;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 25px;
    
 }
 #card-text{
@@ -38,6 +41,36 @@ padding: 20px ;
     text-align: center;
 }
 #video{
-    width: 600px;
-    height: 380px;
+    border-radius: 8px;
+    width: 650px;
+    height: 350px;
 }
+
+.time{
+    display: grid;   
+    grid-auto-flow: column;
+}
+
+.time h1 {
+    color: rgb(70, 70, 70);
+}
+.ingresso{
+   align-items: center;
+    display: grid;   
+    grid-auto-flow: column;
+    margin-bottom: 150px;
+    
+
+}
+
+#botao{
+    width: 300px;
+    height: 70px;
+    margin-left: 180px;
+    margin-right: 180px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #514988;
+    color: white;
+}
+
