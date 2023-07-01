@@ -1,0 +1,47 @@
+body{
+    background-color: #e4e4e4cc;
+}
+.container{
+    background-color: #ffffffcc;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px #cccc;
+    margin-top: 50px;
+    width: 500px;
+}
+.formulario {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    
+}
+.logo img {
+    width: 200px;
+    margin:20px 0px 50px 50px;
+}
+.titulo{
+    text-align: center;
+   margin:50px;
+   
+}
+#cep{
+    width: 100px;
+}
+#rua{
+    width: 300px;
+}
+
+#estado{
+    width: 120px;
+}
+#municipio{
+    width: 350px;
+}
+.footer{
+    background-color: #cccc;
+}
+.footer h4{
+
+    font-size: 20px;
+    text-align: center;
+    color: #8b8b8bcc;
+}
