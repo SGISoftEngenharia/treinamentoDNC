@@ -14,45 +14,46 @@
     </div>
 <div class="container ">
     
-<form>
+
     <h1 class="titulo">Busca Endereço</h1>
+    <span id="msg"></span>
 <div class="formulario">
     <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">CEP</label>
-        <input type="password" class="form-control" id="cep">
+        <label  class="form-label">CEP</label>
+        <input type="text" class="form-control" id="cep">
       </div>
     
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Pesquisar</label>
-        <button type="submit" class="btn btn-primary">CEP</button>
+        <label  class="form-label">Pesquisar</label>
+        <button type="submit" class="btn btn-primary" onclick="buscaCEP()" onblur="buscaCEP()" >CEP</button>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Rua</label>
+        <label  class="form-label">Rua</label>
         <input type="text" class="form-control" id="rua">
       </div>
 </div>
 
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Bairro</label>
+    <label  class="form-label">Bairro</label>
     <input type="text" class="form-control" id="bairro">
   </div>
 <div class="formulario">
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Municipio</label>
-    <input type="password" class="form-control" id="municipio">
+    <label class="form-label">Municipio</label>
+    <input type="text" class="form-control" id="municipio">
   </div>
 
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Estado</label>
-    <input type="password" class="form-control" id="estado">
+    <label  class="form-label">Estado</label>
+    <input type="text" class="form-control" id="estado">
   </div>
 </div>
-</form>  
+ 
 
 </div>
 <footer class="footer container">
     <h4>Sistema de Pequisa de CEP</h4>
 </footer>
-
+<script src="js/index.js"></script>
 </body>
 </html>
